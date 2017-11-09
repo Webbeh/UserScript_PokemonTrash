@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name        Nouvelle interface de PokémonTrash
 // @namespace   geeq.ch
+// @version     2.0.4
 // @license MIT
 // @author			Weby
 // @copyright		copyright 2017, Weby (geeq.ch)
@@ -11,7 +12,6 @@
 // @include     https://pokemontrash.com/club/*
 // @include     http://www.pokemontrash.com/club/*
 // @include     https://www.pokemontrash.com/club/*
-// @version     2.0.3
 // @updateURL https://openuserjs.org/meta/Weby/Nouvelle_interface_de_PokémonTrash.meta.js
 // @downloadURL https://openuserjs.org/src/scripts/Weby/Nouvelle_interface_De_PokémonTrash.user.js
 // @grant				GM.openInTab
@@ -22,6 +22,9 @@
 -----------------------------------------------------------------------------------------------------------------
 Changelog :
 -----------------------------------------------------------------------------------------------------------------
+2.0.4 :
+	Fixed openInTab
+------------------------------------------
 2.0.3 :
 	Added downloadURL
 ------------------------------------------
@@ -2489,7 +2492,7 @@ var config =
       usernameHeight: true,
       largerAvatars: true,
       categorizedUnread: false,
-      enableOldCss: true, //TODO: GM4.0 getResourceText replacement
+      enableOldCss: true,
       oldCss: "2014",
       drafts: false, // If yo udisable the templates/drafts, none of the following scripts will work.
     };
@@ -2817,8 +2820,6 @@ if(config.enableOldCss)
     		links[i].parentNode.removeChild(links[i]);
     	}
     }
-  //TODO
-  //css_old = GM.getResourceText("res_css_"+config.oldCss);    
   if(config.oldCss=="2014")
     css_old=css_2014;
   else
@@ -3193,7 +3194,7 @@ function renameMenus()
 }
 renameMenus();
 // Open unread/followed messages in new tabs
-if(config.openInTabs && location.href.match(/\/unread/) && recent!==null)
+if(config.openInTabs && (location.href.match(/\/unread/) || location.href.match(/action=unread/)) && recent!==null)
 {
   function allintabs() {
 	for(tabsL = 0;tabsL<newtabs.length;tabsL++)
