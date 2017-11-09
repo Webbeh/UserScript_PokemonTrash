@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Nouvelle interface de PokémonTrash
 // @namespace   geeq.ch
-// @version     2.0.5
+// @version     2.0.6
 // @license MIT
 // @author			Weby
 // @copyright		copyright 2017, Weby (geeq.ch)
@@ -22,6 +22,9 @@
 -----------------------------------------------------------------------------------------------------------------
 Changelog :
 -----------------------------------------------------------------------------------------------------------------
+2.0.6 :
+	Fixed bug messing up script when an user was deleted.
+------------------------------------------
 2.0.5 :
 	Fixed bug relating to Open All in Tabs
 ------------------------------------------
@@ -2468,6 +2471,8 @@ background-position:bottom!important;
 
 `;
 
+
+//////////SCRIPT START//////////
 var config =
     {
       opacity: 0.8, //Opacity, between 0.0 and 1.0
@@ -2623,7 +2628,8 @@ bottom: 20px;
 right: 20px;
 text-align: center;
 }
-	`
+	`;
+
   a = document.createElement("div");
   a.className="first_time";
   a.innerHTML=`
@@ -2926,6 +2932,9 @@ if(config.usernameHeight && !config.enableOldCss)
   for(i = 0;i<posters.length;i++)
   {
     a = posters[i].getElementsByTagName("a")[0];
+    //If user has been deleted, there's no A element
+    if(a===undefined)
+	continue;
     
     a.style.lineHeight="12px";
     a.parentNode.parentNode.getElementsByTagName("ul")[0].style.marginTop="20px";
@@ -2954,7 +2963,9 @@ function usernameReadable(width)
         var as = "10px";
       }
 
-      posters[i].getElementsByTagName("a")[0].style.fontSize=as;
+      a = posters[i].getElementsByTagName("a")[0];
+      if(a!==undefined) //If user was deleted, no A tag
+        a.style.fontSize=as;
       posters[i].style.width=w;
       posters[i].style.marginTop=mt;
       posters[i].style.marginLeft=ml;
