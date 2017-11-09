@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Nouvelle interface de PokémonTrash
 // @namespace   geeq.ch
-// @license			MIT
+// @license MIT
 // @author			Weby
 // @copyright		copyright 2017, Weby (geeq.ch)
 // @homepageURL	http://pokemontrash.com/club/
