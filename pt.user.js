@@ -1,6 +1,6 @@
 // ==UserScript==
-// @name        Nouvelle interface de PokemonTrash
-// @namespace   we-bb.com
+// @name        Nouvelle interface de PokémonTrash
+// @namespace   geeq.ch
 // @license			MIT
 // @author			Weby
 // @copyright		copyright 2017, Weby (geeq.ch)
@@ -11,9 +11,8 @@
 // @include     https://pokemontrash.com/club/*
 // @include     http://www.pokemontrash.com/club/*
 // @include     https://www.pokemontrash.com/club/*
-// @version     2.0.0
-// @updateURL   https://openuserjs.org/meta/Weby/Nouvelle_interface_de_PokemonTrash.meta.js
-// @downloadURL https://openuserjs.org/meta/Weby/Nouvelle_interface_de_PokemonTrash.meta.js
+// @version     2.0.1
+// @updateURL   https://openuserjs.org/meta/Weby/Nouvelle_interface_de_PokémonTrash.meta.js
 // @grant				GM.openInTab
 // @noframes
 // ==/UserScript==
@@ -22,6 +21,9 @@
 -----------------------------------------------------------------------------------------------------------------
 Changelog :
 -----------------------------------------------------------------------------------------------------------------
+2.0.1 :
+	Bumped version & changed update URL
+------------------------------------------
 2.0.0 :
 	GreaseMonkey 4 support !
 	Support for the new browser plugin API
