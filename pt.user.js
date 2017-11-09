@@ -11,7 +11,7 @@
 // @include     https://pokemontrash.com/club/*
 // @include     http://www.pokemontrash.com/club/*
 // @include     https://www.pokemontrash.com/club/*
-// @version     2.0.2
+// @version     2.0.3
 // @updateURL https://openuserjs.org/meta/Weby/Nouvelle_interface_de_PokémonTrash.meta.js
 // @downloadURL https://openuserjs.org/src/scripts/Weby/Nouvelle_interface_De_PokémonTrash.user.js
 // @grant				GM.openInTab
