@@ -11,7 +11,7 @@
 // @include     https://pokemontrash.com/club/*
 // @include     http://www.pokemontrash.com/club/*
 // @include     https://www.pokemontrash.com/club/*
-// @version     2.0.1
+// @version     2.0.2
 // @updateURL   https://openuserjs.org/meta/Weby/Nouvelle_interface_de_PokémonTrash.meta.js
 // @grant				GM.openInTab
 // @noframes
@@ -21,6 +21,9 @@
 -----------------------------------------------------------------------------------------------------------------
 Changelog :
 -----------------------------------------------------------------------------------------------------------------
+2.0.2 :
+	Testing webhook
+------------------------------------------
 2.0.1 :
 	Bumped version & changed update URL
 ------------------------------------------
