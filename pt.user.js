@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Nouvelle interface de PokémonTrash
 // @namespace   geeq.ch
-// @version     2.0.4
+// @version     2.0.5
 // @license MIT
 // @author			Weby
 // @copyright		copyright 2017, Weby (geeq.ch)
@@ -22,6 +22,9 @@
 -----------------------------------------------------------------------------------------------------------------
 Changelog :
 -----------------------------------------------------------------------------------------------------------------
+2.0.5 :
+	Fixed bug relating to Open All in Tabs
+------------------------------------------
 2.0.4 :
 	Fixed openInTab
 ------------------------------------------
@@ -3199,7 +3202,7 @@ if(config.openInTabs && (location.href.match(/\/unread/) || location.href.match(
   function allintabs() {
 	for(tabsL = 0;tabsL<newtabs.length;tabsL++)
 	{
-		//GM.openInTab(newtabs[tabsL]);
+		GM.openInTab(newtabs[tabsL]);
 	}
   }
 
