@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Nouvelle interface de PokémonTrash
 // @namespace   geeq.ch
-// @version     2.0.7
+// @version     2.0.8
 // @license MIT
 // @author			Weby
 // @copyright		copyright 2017, Weby (geeq.ch)
@@ -21,6 +21,9 @@
 -----------------------------------------------------------------------------------------------------------------
 Changelog :
 -----------------------------------------------------------------------------------------------------------------
+2.0.8 :
+	Added nothing, just bumping version.
+------------------------------------------
 2.0.7 :
 	Fixed google chrome's WRONG way of dealing with javascript - config works on Chrome now
 	Fixed downloadUrl messing up with TamperMonkey
@@ -3418,7 +3421,7 @@ document.body.appendChild(ccc);
 //GM.addStyle(css);
 
 // Templates and drafts !
-if(!config.templates) return;
+//if(!config.templates) return;
 
 //Weby, 2017
 //Yeah.
