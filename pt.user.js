@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Nouvelle interface de PokémonTrash
 // @namespace   geeq.ch
-// @version     2.0.8
+// @version     2.0.9
 // @license MIT
 // @author			Weby
 // @copyright		copyright 2017, Weby (geeq.ch)
@@ -14,6 +14,7 @@
 // @include     https://www.pokemontrash.com/club/*
 // @updateURL https://openuserjs.org/meta/Weby/Nouvelle_interface_de_PokémonTrash.meta.js
 // @grant				GM.openInTab
+// @grant	GM_openInTab
 // @noframes
 // ==/UserScript==
 
@@ -21,6 +22,9 @@
 -----------------------------------------------------------------------------------------------------------------
 Changelog :
 -----------------------------------------------------------------------------------------------------------------
+2.0.9 :
+	Fixed openInTabs in chrome/tampermonkey
+------------------------------------------
 2.0.8 :
 	Added nothing, just bumping version.
 ------------------------------------------
@@ -2534,6 +2538,16 @@ for(i=0;i<l.length;i++)
 		break;
 	}
 }
+
+function opentabs(tabs)
+{
+        if(GM.openInTabs)
+                GM.openInTab(tabs);
+        else
+                GM_openInTab(tabs);
+}
+
+
 function str_replace(text, orig, repl)
 {
 	pos=text.indexOf(orig);
@@ -3213,13 +3227,14 @@ function renameMenus()
 	}
 }
 renameMenus();
+
 // Open unread/followed messages in new tabs
 if(config.openInTabs && (location.href.match(/\/unread/) || location.href.match(/action=unread/)) && recent!==null)
 {
   function allintabs() {
 	for(tabsL = 0;tabsL<newtabs.length;tabsL++)
 	{
-		GM.openInTab(newtabs[tabsL]);
+		opentabs(newtabs[tabsL]);
 	}
   }
 
@@ -3359,7 +3374,7 @@ if(config.pmPopup)
 					if(confirm("Vous avez reçu "+amount+" nouveau"+x+" message"+s+" privé"+s+" !\n\nAccéder aux messages privés maintenant ?"))
 					{
 						setStore("state_PMwarned",false);
-						GM.openInTab("/club/pm/");
+						opentabs("/club/pm/");
 					}
 				}
 			}
