@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Nouvelle interface de PokémonTrash
 // @namespace   geeq.ch
-// @version     2.0.6
+// @version     2.0.7
 // @license MIT
 // @author			Weby
 // @copyright		copyright 2017, Weby (geeq.ch)
@@ -13,7 +13,6 @@
 // @include     http://www.pokemontrash.com/club/*
 // @include     https://www.pokemontrash.com/club/*
 // @updateURL https://openuserjs.org/meta/Weby/Nouvelle_interface_de_PokémonTrash.meta.js
-// @downloadURL https://openuserjs.org/src/scripts/Weby/Nouvelle_interface_De_PokémonTrash.user.js
 // @grant				GM.openInTab
 // @noframes
 // ==/UserScript==
@@ -22,6 +21,10 @@
 -----------------------------------------------------------------------------------------------------------------
 Changelog :
 -----------------------------------------------------------------------------------------------------------------
+2.0.7 :
+	Fixed google chrome's WRONG way of dealing with javascript - config works on Chrome now
+	Fixed downloadUrl messing up with TamperMonkey
+------------------------------------------
 2.0.6 :
 	Fixed bug messing up script when an user was deleted.
 ------------------------------------------
