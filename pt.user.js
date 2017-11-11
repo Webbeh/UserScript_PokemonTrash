@@ -2755,8 +2755,8 @@ if(location.href.match(/\/profile/) || location.href.match(/action=profile/))
     checkboxes=[];
     for(i=0;i<inputs.length;i++)
     {
-      name = inputs[i].name;
-      val = config[name];
+      nam = inputs[i].name;
+      val = config[nam];
       if(val!==null && val!=="")
       {
 	if(inputs[i].type=="radio")
