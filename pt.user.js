@@ -2620,9 +2620,6 @@ if(!window.localStorage)
 }
 
 
-
-
-
 // Generic declarations used in a lot of stuff
 var loggedIn=true;
 var css="";
