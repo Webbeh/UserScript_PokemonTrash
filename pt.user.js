@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Nouvelle interface de PokémonTrash
 // @namespace   geeq.ch
-// @version     2.1.0
+// @version     2.1.1
 // @license MIT
 // @author			Weby
 // @copyright		copyright 2017, Weby (geeq.ch)
@@ -22,6 +22,9 @@
 -----------------------------------------------------------------------------------------------------------------
 Changelog :
 -----------------------------------------------------------------------------------------------------------------
+2.1.1 :
+	Bumped version
+------------------------------------------
 2.1.0 :
 	Added polyfill helper
 ------------------------------------------
@@ -3527,7 +3530,4 @@ document.body.appendChild(ccc);
 //GM.addStyle(css);
 
 // Templates and drafts !
-//if(!config.templates) return;
-
-//Weby, 2017
-//Yeah.
+if(!config.templates) return;
