@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Nouvelle interface de PokémonTrash
 // @namespace   geeq.ch
-// @version     2.1.2
+// @version     2.1.3
 // @license MIT
 // @author			Weby
 // @copyright 2017, Weby (geeq.ch)
@@ -22,6 +22,9 @@
 -----------------------------------------------------------------------------------------------------------------
 Changelog :
 -----------------------------------------------------------------------------------------------------------------
+2.1.3 :
+	Script checks if you're logged in or not.
+-----------------------------------------
 2.1.2 :
 	Removed polyfill helper that... didn't help
 	Fixed tampermonkey's (chrome/opera/...) open In Tabs
@@ -609,35 +612,6 @@ background-color:#FFFFFF;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-http://www.plixup.com/pics_core3/1476697468265forum_pokemon.jpg
-http://www.plixup.com/pics_core3/14766975773191bg.png
-*/
-
-
-
-/*
-     FILE ARCHIVED ON 17:36:51 Feb 12, 2014 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 9:11:57 Oct 17, 2016.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
 header {
 	background: url('http://www.plixup.com/pics_core3/1476697468265forum_pokemon.jpg') !important;
 }
@@ -2523,6 +2497,23 @@ var config =
       oldCss: "2014",
       drafts: false, // If yo udisable the templates/drafts, none of the following scripts will work.
     };
+
+
+//Check if logged in. Aborting script if not.
+function checkLogin() {
+	menuItems = document.getElementsByClassName("header-membre")[0].getElementsByTagName("li");
+	for(i=0; i<menuItems.length; i++)
+	{
+		if(menuItems[i].getElementsByTagName("a")[0].innerHTML=="Identifiez-vous")
+		{
+			return false;
+		}
+	}
+	return true;
+}
+
+if(!checkLogin())
+	return;
 
 
 if(!window.localStorage)
