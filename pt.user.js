@@ -3429,8 +3429,3 @@ var ccc = document.createElement("style");
 ccc.type="text/css";
 ccc.innerHTML= css;
 document.body.appendChild(ccc);
-
-//GM.addStyle(css);
-
-// Templates and drafts !
-if(!config.templates) return;
