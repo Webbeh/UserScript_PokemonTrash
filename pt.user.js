@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name        Nouvelle interface de PokémonTrash
 // @namespace   geeq.ch
-// @version     2.1.3
+// @version     2.1.4
 // @license MIT
 // @author			Weby
 // @copyright 2017, Weby (geeq.ch)
 // @homepageURL	http://pokemontrash.com/club/
 // @description Ce script permet de modifier drastiquement l'interface de PokémonTrash.
-// @icon				http://www.plixup.com/pics_core3/14754800337245miaouss.png
+// @icon	http://www.plixup.com/pics_core3/15135107537711rsz_14754800337245miaouss.png
 // @include     http://pokemontrash.com/club/*
 // @include     https://pokemontrash.com/club/*
 // @include     http://www.pokemontrash.com/club/*
@@ -22,6 +22,9 @@
 -----------------------------------------------------------------------------------------------------------------
 Changelog :
 -----------------------------------------------------------------------------------------------------------------
+2.1.4 :
+	Changed icon size
+-----------------------------------------
 2.1.3 :
 	Script checks if you're logged in or not.
 -----------------------------------------
