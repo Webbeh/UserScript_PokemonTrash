@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name        Nouvelle interface de PokémonTrash
 // @namespace   geeq.ch
-// @version     2.1.4
+// @version     2.1.5
 // @license MIT
 // @author			Weby
 // @copyright 2017, Weby (geeq.ch)
 // @homepageURL	http://pokemontrash.com/club/
 // @description Ce script permet de modifier drastiquement l'interface de PokémonTrash.
-// @icon	http://www.plixup.com/pics_core3/15135107537711rsz_14754800337245miaouss.png
+// @icon	http://www.raidstone.net/img/15135107537711rsz_14754800337245miaouss.png
 // @include     http://pokemontrash.com/club/*
 // @include     https://pokemontrash.com/club/*
 // @include     http://www.pokemontrash.com/club/*
@@ -616,7 +616,7 @@ background-color:#FFFFFF;
 
 
 header {
-	background: url('http://www.plixup.com/pics_core3/1476697468265forum_pokemon.jpg') !important;
+	background: url('http://www.raidstone.net/img/1476697468265forum_pokemon.jpg') !important;
 }
 #nav-site, .menu-mobile
 {
@@ -657,7 +657,7 @@ header {
 	padding-left: 50px;
 	margin-left: 0px;
 }
-body{background:url(http://www.plixup.com/pics_core3/14766975773191bg.png) #181818;color:#555;font:13px Century Gothic, Apple Gothic, Arial, sans-serif;margin:0;padding:0}
+body{background:url(http://www.raidstone.net/img/14766975773191bg.png) #181818;color:#555;font:13px Century Gothic, Apple Gothic, Arial, sans-serif;margin:0;padding:0}
 img{border:none;max-width:815px}
 a{color:#069;text-decoration:none}
 a:visited{color:#336}
@@ -676,7 +676,7 @@ h4,h5,h6{color:#000;font-size:1em;margin:0;padding:0}
 .flow_hidden .windowbg,.flow_hidden .windowbg2{margin-top:2px}
 .clear_left{clear:left}
 ul.reset,ul.reset li{list-style:none;margin:0;padding:0}
-#container{width:970px;background:url(http://www.plixup.com/pics_core3/14766975773191bg.png) #F5F5F5;border:2px solid #AAA;margin:0 auto;padding:33px 15px}
+#container{width:970px;background:url(http://www.raidstone.net/img/14766975773191bg.png) #F5F5F5;border:2px solid #AAA;margin:0 auto;padding:33px 15px}
 #options{width:100%;font-size:12px;display:block;color:#777;text-align:center;border-bottom:1px dashed #CCC;margin:0 auto 15px}
 #options ul{margin:0;padding:0}
 #options li{width:14%;opacity:0.6;list-style:none;display:inline-block;margin:0;padding:0 0 7px}
@@ -2472,8 +2472,8 @@ background-position:bottom!important;
 var config =
     {
       opacity: 0.8, //Opacity, between 0.0 and 1.0
-      bgImg: "http://www.plixup.com/pics_core3/15102140169767e12487_wallpaper_197535.jpg",
-      headImg: "http://www.plixup.com/pics_core3/14754428244372Untitled.png", // Eevolutions
+      bgImg: "http://www.raidstone.net/img/15102140169767e12487_wallpaper_197535.jpg",
+      headImg: "http://www.raidstone.net/img/14754428244372Untitled.png", // Eevolutions
       openInTabs: true,
       pmPopup: true,
       resizedMenu: true,
@@ -2730,8 +2730,8 @@ if(location.href.match(/\/profile/) || location.href.match(/action=profile/))
     <legend>Voyage dans le temps</legend>
     <label><input type="checkbox" name="enableOldCss" />Activer le thème choisi ci-dessous. Ceci aura pour effet de désactiver les scripts modifiant l'interface actuelle automatiquement, puisque ceux-ci seront totalement inutiles...</label><br />
     <table class="tamaman">
-    <tr><td style="min-width: 6%"><input type="radio" name="oldCss" id="css_2015" value="2015" /></td><td><label for="css_2015"><img src="http://www.plixup.com/pics_core3/147669660029192016_10_17_10_37_46_1920x1080_HP.png" /></label></td><td><label for="css_2015">Style de 2015</label></td></tr>
-    <tr><td><input type="radio" name="oldCss" id="css_2014" value="2014" /></td><td><label for="css_2014"><img src="http://www.plixup.com/pics_core3/147669664675202016_10_17_11_27_51_1920x1080_HP_2014.png" /></label></td><td><label for="css_2014">Style de 2014</label></td></tr>
+    <tr><td style="min-width: 6%"><input type="radio" name="oldCss" id="css_2015" value="2015" /></td><td><label for="css_2015"><img src="http://www.raidstone.net/img/147669660029192016_10_17_10_37_46_1920x1080_HP.png" /></label></td><td><label for="css_2015">Style de 2015</label></td></tr>
+    <tr><td><input type="radio" name="oldCss" id="css_2014" value="2014" /></td><td><label for="css_2014"><img src="http://www.raidstone.net/img/147669664675202016_10_17_11_27_51_1920x1080_HP_2014.png" /></label></td><td><label for="css_2014">Style de 2014</label></td></tr>
     </table>
     </fieldset>
     <fieldset>
