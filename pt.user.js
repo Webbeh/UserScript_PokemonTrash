@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Nouvelle interface de PokémonTrash
 // @namespace   geeq.ch
-// @version     2.1.5
+// @version     2.1.6
 // @license MIT
 // @author			Weby
 // @copyright 2017, Weby (geeq.ch)
@@ -3435,3 +3435,6 @@ var ccc = document.createElement("style");
 ccc.type="text/css";
 ccc.innerHTML= css;
 document.body.appendChild(ccc);
+
+
+
